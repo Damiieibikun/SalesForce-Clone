@@ -501,3 +501,40 @@
   font-size: 26px;
   font-weight: 700;
 }
+
+/* section 7 */
+
+.container7 h1 {
+  font-size: 46px;
+  padding: 0 30%;
+}
+
+.container7-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+
+.container7-info div {
+  padding: 30px;
+  width: 620px;
+  height: 349px;
+}
+.container7-info img {
+  width: 100%;
+}
+
+.container7-info-text{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+
+.container7-info-text h3{
+  margin: 0;
+
+}

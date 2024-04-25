@@ -374,8 +374,14 @@
 }
 
 /* section 5 */
+.container5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.container5 {
+.container5-bg-img {
   margin-top: 60px;
   background-image: url("./images/industries_bg.jpg");
   background-position: center;
@@ -383,11 +389,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 181px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .container5-heading {
@@ -396,13 +398,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
 }
 
 .container5-imgs {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 60px;
 }
 
 .container5-imgs div {

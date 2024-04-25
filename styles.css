@@ -508,7 +508,11 @@
   font-size: 46px;
   padding: 0 30%;
 }
-
+.container7 p{
+  color: rgba(0, 0, 0, 0.82);
+  line-height: 1.5;
+  font-size: 20px;
+}
 .container7-info {
   display: flex;
   flex-wrap: wrap;
@@ -651,6 +655,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 
 .container10 p {
@@ -679,4 +684,21 @@
 
 .container10-card-items button {
   margin: 0 0 0px 20px;
+}
+
+
+/* section 11 */
+
+.container11{
+  margin-top: 40px;
+}
+
+.container11 h3{
+  text-align: left;
+}
+
+.container11 p{
+  color: rgba(0, 0, 0, 0.82);
+  line-height: 1.5;
+  font-size: 20px;
 }

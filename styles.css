@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/* nav styles */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .navigation .nav_left a {
+    text-decoration: none;
+    color: #032d60;
+  }
+  .nav_right li img {
+    width: 20px;
+  }
+  .nav_logo a img {
+    width: 60px;
+  }
+  .nav_left,
+  .nav_right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+  }
+  .nav_left li a:hover {
+    color: #0176d3;
+  }
+  .nav_right_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_right_link a {
+    color: #032d60;
+    text-decoration: none;
+  }
+  .nav_right_contact a {
+    color: #032d60;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .nav_right_try a {
+    padding: 10px 30px;
+    background-color: #2e844a;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+  .second_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06a59a;
+    color: white;
+    padding: 10px 0;
+    margin-top: 76px;
+  }
+  .second_nav img {
+    width: 120px;
+  }
+  .second_nav a {
+    color: white;
+  }
+
+  /* hero styles */
+.hero-container{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+    background-image: url('./images/bg_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 60px;
+    bottom: 100px;
+    height: 100vh;
+    width: 100%;
+  
+}
+
+
+.hero-text{
+    padding: 20px 100px 20px 50px ;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    top: 135px;
+}
+
+.hero-text  h1{
+    color: #032d60;
+    font-size: 53px;
+}
+
+.hero-text p{
+    line-height: 1.5;
+    font-size: 22px;
+    color: #032d60;
+}
+
+
+.bck-grd-img{
+    width: 100%;
+}
+
+.button-style{
+    display: flex;
+    gap: 35px;
+}
+
+
+.btn-regular
+{
+    background-color: #0176d3;
+    padding: 20px 35px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;    
+    border: none; 
+}
+.btn-regular:hover
+{
+  background-color: #032d60;
+  cursor: pointer;
+}
+
+.btn-transparent{
+  padding: 20px 35px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: white;
+    color:#0176d3;
+    border:2px solid #0176d3;
+}
+
+.btn-transparent:hover{
+  color: #032d60;
+  background-color: #EAF5FE;
+  cursor: pointer;
+}
+
+.hero-text img{
+    width: 50%;
+}
+
+.image-einstien{
+  background-image: url('./images/salesforce_banner_img2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 18%;
+  background-position: 30%;
+}

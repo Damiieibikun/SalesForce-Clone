@@ -79,31 +79,39 @@
   color: white;
 }
 
+
 /* hero section */
+/* 
 .hero-container {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   background-image: url("./images/bg_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; 
   z-index: -1;
   font-family: Arial, Helvetica, sans-serif;
-
   bottom: 100px;
   height: 100vh;
+  height: 400px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
 }
 
 .hero-text {
   padding: 20px 100px 20px 50px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   position: relative;
   top: 135px;
+  background-color: white;
+  width: 45%;
+  height: 1000px;
 }
 
 .hero-text h1 {
@@ -116,7 +124,57 @@
   font-size: 22px;
   color: #032d60;
 }
+ */
 
+ /* .hero-text img {
+  width: 100%;
+} */
+
+/* .image-einstien {
+  background-image: url("./images/salesforce_banner_img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ position: relative;
+  top: 18%;
+  background-position: 30%; 
+  border: 1px solid black;
+  width: 50%;
+  height: 300px;
+} */
+
+/* ******************************** */
+.hero-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-image: url("./images/bg_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.image-einstien {
+  background-image: url("./images/salesforce_banner_img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-text {
+  padding: 20px 100px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;}
+
+  .hero-text p {
+    line-height: 1.5;
+    font-size: 22px;
+    color: #032d60;
+  }
+
+  .hero-text h1 {
+    color: #032d60;
+    font-size: 50px;
+  }
+/* ******************************** */
 .bck-grd-img {
   width: 100%;
 }
@@ -157,18 +215,7 @@
   border: 2px solid #032d60;
 }
 
-.hero-text img {
-  width: 50%;
-}
 
-.image-einstien {
-  background-image: url("./images/salesforce_banner_img2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 18%;
-  background-position: 30%;
-}
 /* chat button */
 .chat-button {
   background-color: #0176d3;

@@ -91,19 +91,20 @@
   position: relative;
   z-index: -1;
   font-family: Arial, Helvetica, sans-serif;
-
   bottom: 100px;
-  height: 100vh;
+  height: 600px;
   width: 100%;
 }
 
 .hero-text {
-  padding: 20px 100px 20px 50px;
+  padding: 0px 70px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   position: relative;
-  top: 135px;
+  top: 100px;
+  width: 90%;
+  margin: auto;
 }
 
 .hero-text h1 {

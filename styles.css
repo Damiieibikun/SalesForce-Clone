@@ -169,6 +169,44 @@
   top: 18%;
   background-position: 30%;
 }
+/* chat button */
+.chat-button {
+  background-color: #0176d3;
+  width: 170px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 30px 0;
+}
+
+.chat-button img {
+  width: 30%;
+}
+
+.chat-button p {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.chat-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* main section */
 .main {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

@@ -7,33 +7,46 @@
 /* nav styles */
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
+  justify-content: space-around;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 325px;
+  max-width: 1700px;
+  margin: auto;
+  z-index: 1;
+  height: 155px;
+  
 }
 .navigation .nav_left a {
   text-decoration: none;
   color: #032d60;
+  
 }
 .nav_right li img {
   width: 20px;
 }
 .nav_logo a img {
-  width: 60px;
+  width: 85px;
 }
-.nav_left,
-.nav_right {
+.nav_left, .nav_right{
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
+  
 }
+
+.nav_right{
+  flex-wrap: wrap;
+}
+
 .nav_left li a:hover {
   color: #0176d3;
 }
@@ -53,7 +66,7 @@
   margin-bottom: 5px;
 }
 .nav_right_try a {
-  padding: 10px 30px;
+  padding: 10px 25px;
   background-color: #2e844a;
   color: white;
   text-decoration: none;
@@ -65,12 +78,16 @@
 }
 .second_nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #06a59a;
   color: white;
   padding: 10px 0;
-  margin-top: 76px;
+  gap: 7px;
+  font-weight: 600;
+  margin-top: 155px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .second_nav img {
   width: 120px;
@@ -80,43 +97,54 @@
 }
 
 /* hero section */
-.hero-container {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 20px;
+.main{
+  max-width: 1700px;
+  min-width: 350px;
+  overflow: hidden;
+  margin: auto;
+}
+.hero-container{
+  display: flex;
+  flex-wrap: wrap;
   background-image: url("./images/bg_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: -1;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  bottom: 100px;
-  height: 600px;
-  width: 100%;
 }
 
+.image-einstien {
+  background-image: url("./images/salesforce_banner_img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 50px;
+  width: 642px;
+  height: 590px;
+  position: relative;
+  z-index: 0;
+}
 .hero-text {
-  padding: 0px 70px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  position: relative;
-  top: 100px;
-  width: 90%;
-  margin: auto;
+  gap: 20px;
+  width: 620px;
 }
 
-.hero-text h1 {
-  color: #032d60;
-  font-size: 53px;
-}
+  .hero-text p {
+    line-height: 1.5;
+    font-size: 22px;
+    color: #032d60;
+    padding: 20px;
+  }
 
-.hero-text p {
-  line-height: 1.5;
-  font-size: 22px;
-  color: #032d60;
-}
+  .hero-text h1 {
+    color: #032d60;
+    font-size: 50px;
+    padding: 20px;
+  }
 
 .bck-grd-img {
   width: 100%;
@@ -125,16 +153,21 @@
 .button-style {
   display: flex;
   gap: 35px;
+  margin-left: 20px;
 }
 
 .btn-regular {
   background-color: #0176d3;
-  padding: 20px 35px;
-  border-radius: 3px;
+  padding: 15px 35px;
+  border-radius: 4px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 .btn-regular:hover {
   background-color: #032d60;
@@ -142,13 +175,17 @@
 }
 
 .btn-transparent {
-  padding: 20px 35px;
-  border-radius: 3px;
+  padding: 15px 35px;
+  border-radius: 4px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 15px;
   background-color: white;
   color: #0176d3;
   border: 2px solid #0176d3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .btn-transparent:hover {
@@ -158,18 +195,7 @@
   border: 2px solid #032d60;
 }
 
-.hero-text img {
-  width: 50%;
-}
 
-.image-einstien {
-  background-image: url("./images/salesforce_banner_img2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 18%;
-  background-position: 30%;
-}
 /* chat button */
 .chat-button {
   background-color: #0176d3;
@@ -208,17 +234,17 @@
 }
 
 /* main section */
-.main {
+.main2 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.main a {
+.main2 a {
   color: #032d60;
   font-weight: 600;
 }
 
-.main a:hover {
+.main2 a:hover {
   text-decoration: none;
   color: #0176d3;
 }
@@ -238,8 +264,8 @@
 .container2-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 40px;
   margin-top: 45px;
 }
 
@@ -328,7 +354,7 @@
 .container3-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 45px;
   margin-top: 45px;
 }
@@ -363,11 +389,11 @@
 }
 
 .container4-icons {
-  display: flex;
   gap: 70px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -443,6 +469,8 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container5-imgs div {
@@ -557,7 +585,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 50px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .container7-info div {
@@ -745,18 +773,23 @@
 }
 
 .container11-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  
 }
 
 .container11-info img {
-  width: 100%;
+  width: 435px;
 }
 
 .container11-info-text {
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 620px;
   gap: 30px;
   padding: 0 40px;
 }
@@ -899,9 +932,11 @@ footer {
 h4 {
   align-self: start;
 }
+
+.footer-small-logo img{width: 20%;}
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   position: relative;
   bottom: 120px;
@@ -929,6 +964,7 @@ h4 {
   background-color: #032e61;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   padding: 25px 120px;
 }
@@ -936,7 +972,7 @@ h4 {
 .footer-small ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 23px;
 }
 .footer-small ul li {
   list-style: none;
@@ -958,4 +994,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 80%;
+  margin: auto;
 }

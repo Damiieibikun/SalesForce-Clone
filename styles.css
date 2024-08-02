@@ -5,7 +5,7 @@
 }
 
 /* nav styles */
-.navigation {
+.navigation, .navigation-responsive {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -23,6 +23,10 @@
   z-index: 1;
   height: 155px;
   
+}
+
+.navigation-responsive{
+  display: none;
 }
 .navigation .nav_left a {
   text-decoration: none;
@@ -996,4 +1000,20 @@ h4 {
   gap: 30px;
   width: 80%;
   margin: auto;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1270px) {
+  .navigation-responsive{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-einstien{
+    height: 400px;
+    right: 50px;
+  }
 }
